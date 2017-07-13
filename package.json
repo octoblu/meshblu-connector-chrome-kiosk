@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-dashboard-opener",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Meshblu Connector Powermate",
   "homepage": "https://github.com/octoblu/meshblu-connector-dashboard-opener",
   "bugs": "https://github.com/octoblu/meshblu-connector-dashboard-opener/issues",
@@ -14,7 +14,7 @@
     "url": "https://github.com/octoblu/meshblu-connector-dashboard-opener.git"
   },
   "scripts": {
-    "build": "coffee --compile --map --output lib/ src/",
+    "build": "exit 0",
     "start": "meshblu-connector",
     "test": "exit 0",
     "coverage": "nyc npm test",
@@ -24,7 +24,6 @@
   "bin": "command.js",
   "devDependencies": {
     "chai": "^4.0.2",
-    "coffee-coverage": "^2.0.1",
     "mocha": "^3.4.2",
     "mocha-multi": "^0.11.0",
     "mocha-osx-reporter": "^0.1.2",
@@ -62,7 +61,7 @@
       "json"
     ],
     "extension": [
-      ".coffee"
+      ".js"
     ]
   },
   "pkg": {
