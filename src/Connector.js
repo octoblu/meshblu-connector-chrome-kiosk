@@ -15,19 +15,18 @@ class Connector extends EventEmitter{
   }
 
   onConfig(device) {
-    console.log('onConfig', device)
     this._startChromeFromDevice(device)
   }
 
   _startChromeFromDevice(device) {
-    console.log('_startChromeFromDevice', device)
-    const dashboardUrl = _.get(device, 'options.dashboardUrl')
+    const dashboardUrl = _.get(device, 'genisys.spaceUrl')
     if(_.isEmpty(dashboardUrl)) return
+    if(this._previousUrl === dashboardUrl) return
+    this._previousUrl = dashboardUrl
     this._startChrome(dashboardUrl)
   }
 
   _startChrome(dashboardUrl) {
-    console.log('_startChrome', dashboardUrl)
     opener(dashboardUrl)
   }
 

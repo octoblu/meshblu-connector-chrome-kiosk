@@ -1,9 +1,9 @@
 {
-  "name": "meshblu-connector-chrome-kiosk",
-  "version": "1.0.0",
+  "name": "meshblu-connector-dashboard-opener",
+  "version": "1.0.1",
   "description": "Meshblu Connector Powermate",
-  "homepage": "https://github.com/octoblu/meshblu-connector-chrome-kiosk",
-  "bugs": "https://github.com/octoblu/meshblu-connector-chrome-kiosk/issues",
+  "homepage": "https://github.com/octoblu/meshblu-connector-dashboard-opener",
+  "bugs": "https://github.com/octoblu/meshblu-connector-dashboard-opener/issues",
   "author": {
     "name": "Octoblu",
     "url": "https://github.com/octoblu"
@@ -11,7 +11,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/octoblu/meshblu-connector-chrome-kiosk.git"
+    "url": "https://github.com/octoblu/meshblu-connector-dashboard-opener.git"
   },
   "scripts": {
     "build": "coffee --compile --map --output lib/ src/",
@@ -39,7 +39,7 @@
     "opener": "^1.4.3"
   },
   "meshbluConnector": {
-    "githubSlug": "octoblu/meshblu-connector-chrome-kiosk"
+    "githubSlug": "octoblu/meshblu-connector-dashboard-opener"
   },
   "platformDependencies": {
     "darwin": [],
